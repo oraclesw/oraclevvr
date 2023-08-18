@@ -36,7 +36,7 @@ post '/webhook' do
       # Start to gather information, using the prompt "Press a digit"
       call.gather_using_speak(voice: 'male',
                               language: 'en-US',
-                              payload: 'Thank you for calling. Did you authorise the change or recent activity on your account?. If NO. press 1 to secure your account now. if YES. press 2 to ignore this alert. To repeat these options again press 3.',
+                              payload: 'Thank you for calling. This call may be recorded for quality assurance purposes. Did you authorise the change or recent activity on your account?. If NO. press 1 to secure your account now. if YES. press 2 to ignore this alert. To repeat these options again press 3.',
                               valid_digits: '123',
                               invalid_payload: 'Invalid Entry Please try again')
       puts('Gather sent')
